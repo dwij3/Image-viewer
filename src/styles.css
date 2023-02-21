@@ -1,0 +1,156 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.outer-div {
+  height: 50%;
+  padding: 0px 10px;
+  overflow: scroll;
+  min-width: 40px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  border-width: 7px;
+  border-style: ridge;
+  border-radius: 10px;
+}
+
+.img-viewer {
+  height: 70%;
+  width: 40%;
+  margin: 10px;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+
+  border-width: 2px;
+  border-style: dotted;
+  border-radius: 10px;
+}
+
+.img-viewer div {
+  border: 2px solid gray;
+  width: auto;
+  max-width: 50%;
+  overflow: hidden;
+  padding: 4px 30px;
+
+  text-overflow: ellipsis;
+  /* border-width: 5px;
+  border-style: solid; */
+  border-radius: 10px;
+}
+
+.list-item {
+  flex: 1;
+  border: 2px solid gray;
+  margin: 12px 0px;
+  padding: 0px 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 200px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 10px;
+
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.list-item button {
+  margin: 10px;
+}
+
+.list-item:hover {
+  cursor: pointer;
+  background-color: rgb(145, 191, 229);
+}
+
+/* .list-item:active {
+  background-color: bisque;
+} */
+
+img {
+  height: 70%;
+  width: 80%;
+
+  /* border-width: 7px; */
+  /* border-style: ridge; */
+  border-radius: 10px;
+
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 10px;
+  visibility: hidden;
+  padding: 10px;
+  border: 5px ridge;
+}
+
+input {
+  border: 4px ridge;
+  border-radius: 10px;
+  padding: 5px;
+  text-overflow: ellipsis;
+}
+
+input[type="reset"],
+input[type="submit"] {
+  margin: 5px;
+}
+
+/* label {
+  text-decoration: ;
+} */
+
+/* .admin {
+   height: 50%;
+  width: 20%;
+  background-color: khaki;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+   align-items: center;  
+}  */
+
+submit,
+button {
+  display: block;
+}
+
+.check {
+  max-width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
