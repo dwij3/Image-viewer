@@ -1,7 +1,7 @@
-import { model } from "./model.js";
-import { listOfImage } from "./view/listOfImage";
-import { imageView } from "./view/imageView";
-import { editView } from "./view/editView";
+import { model } from "./model.mjs";
+import { listOfImage } from "./view/listOfImage.mjs";
+import { imageView } from "./view/imageView.mjs";
+import { editView } from "./view/editView.mjs";
 
 export const controller = {
   init: function (arr) {

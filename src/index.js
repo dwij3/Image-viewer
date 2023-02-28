@@ -1,4 +1,4 @@
-import { controller } from "./controller.js";
-import { arrayOfImages } from "./data";
+import { controller } from "./controller.mjs";
+import { arrayOfImages } from "./data.mjs";
 
 controller.init(arrayOfImages);
